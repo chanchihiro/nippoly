@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+  // TODO: delete when clear method implemented
   //chrome.storage.sync.clear();
   new Promise((resolve, reject) => {
     chrome.tabs.getSelected(null, resolve);
