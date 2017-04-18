@@ -21,7 +21,6 @@ window.addEventListener('load', () => {
         status.textContent = 'DONE'
         resolve();
       });
-      console.log(items);
     })).then(() => {
       chrome.storage.sync.get('data', (items) => {
         const textArea = document.getElementById('test');
