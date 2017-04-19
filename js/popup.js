@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
       chrome.storage.sync.get('data', (items) => {
         const textArea = document.getElementById('test');
         const item = items.data[items.data.length - 1];
-        textArea.textContent = `- [${item.title}](${item.url})\n`
+        textArea.textContent = `[${item.title}](${item.url})\n`
         textArea.select();
         document.execCommand('copy');
         window.close();
