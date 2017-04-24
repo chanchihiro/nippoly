@@ -25,6 +25,8 @@ window.addEventListener('load', () => {
         // status.textContent = '追加しました。'
         let modal = document.getElementById('Rectangle-2');
         modal.style.opacity = 1.0;
+        modal.style.width = "294px";
+        modal.style.height = "60px";
         resolve();
       });
     })).then(() => {
